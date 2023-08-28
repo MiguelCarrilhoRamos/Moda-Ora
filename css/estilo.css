@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&family=Viaoda+Libre&display=swap');
 
 :root{
+    scroll-behavior: smooth;
     font-size: 62.5%;
     --nav-height: 8rem;
     --footer-height: 2rem;
-}
-html {
-    scroll-behavior: smooth;
 }
 body{
     margin: 0;
