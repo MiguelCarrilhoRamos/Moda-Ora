@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&family=Viaoda+Libre&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --nav-height: 8rem;
+    --footer-height: 2rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+.hero{
+    background-color: #162028;
+}
+.hero-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--nav-height);
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: #162028;
+}
+.hero-nav h1{
+    text-transform: capitalize;
+    font-family: Viaoda Libre;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 0;
+    margin-left: 4em;
+}
+.hero-nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin-right: 6em;
+}
+.nav-list a{
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.nav-list a:hover{
+    border-bottom: 1px solid #425564;
+}
+.container{
+    color: #555;
+}
+.container__image img{
+    width: 100vw;
+}
+.container__about-us{
+    height: calc(100vh - var(--nav-height));
+    width: 70vw;
+    margin: 0 auto;
+}
+.container__about-us h2{
+    padding-top: 3em;
+    font-family: Viaoda Libre;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.container__about-us p{
+    font-size: 2.5rem;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 5em;
+}
+.container-card{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-bottom: 10em;
+}
+.container-card__type{
+    flex-basis:400px;
+}
+
+.container-card__type img{
+    width: 400px;
+    margin: auto;
+}
+.container-card__type p{
+    font-size: 2rem;
+    margin: 0;
+}
+p.type-style{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.container__contacts{
+    height: calc(100vh - var(--nav-height) - var(--footer-height));
+    background-image: url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 6rem;
+}
+.container__contacts div{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__contacts h2{
+    width: 30ch;
+    padding-top: 3em;
+    font-family: Viaoda Libre;
+    text-align: left;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.container__contacts p{
+    width: 60ch;
+    font-size: 2.5rem;
+    line-height: 2;
+    text-align: left;
+    margin-bottom: 5em;
+}
+footer{
+    height: 8rem;
+    background-color: #0b171f;
+    color:  #6f8597;
+    font-size: 2.5rem;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    padding-top: var(--footer-height);
+}
+
